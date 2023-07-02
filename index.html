@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Renay Hernandez">
+    <title>Form Activity Solution File</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <a href="#main-content" id="skipLink">Skip to main content</a>
+    <header>
+        <h1>Form Activity - GIT414</h1>
+        <nav>
+            <h2 class="sr-only">Site Navigation</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="particleBackground"></div>
+    <main id="main-content">
+        <article>
+            <h2>Coding Semantic and Accessible Forms!</h2>
+            <p>Today we'll be focusing on coding a form that is accessible and semantic, and we'll also briefly discuss skip links for your website. Forms can be a source of frustration for users, whether they specifically need help with accessing your website
+                or if they just prefer that your forms be easy to use and submit. Follow along as we code this in class, and please ask questions as they arise. Let's make a form!</p>
+
+            <form action="https://wp.zybooks.com/form-viewer.php" method="post">
+                <label for="fullName">Full Name<span class="required">*</span></label>
+                <input id="fullName" type="text" name="name" maxlength="20" aria-required="true">
+
+                <label for="email">Email Address<span class="required">*</span></label>
+                <input id="email" type="email" name="email" maxlength="30" aria-required="true">
+
+                <label for="phoneNumber">Phone Number<span class="required">*</span></label>
+                <input id="phoneNumber" type="tel" name="phone" maxlength="12" aria-required="true">
+
+                <fieldset>
+                    <Legend>Preferred Method of Contact</Legend>
+
+                    <input type="radio" id="byEmail" name="contactMethod" value="byEmail">
+                    <label for="byEmail">Email</label>
+                    <input type="radio" id="byPhone" name="contactMethod" value="byPhone">
+                    <label for="byPhone">Phone</label>
+                </fieldset>
+
+                <label for="StateResiding">State You Live In<span class="required">*</span></label><select id="StateResiding">
+                    <optgroup label="States of America">
+                        <option>
+                            Alabamba
+                        </option>
+                        <option>
+                            Alaska
+                        </option>
+                        <option>
+                            Arizona
+                        </option>
+                        <option>
+                            Arkansas
+                        </option>
+                        <option>
+                            California
+                        </option>
+                        <option>
+                            Colorado
+                        </option>    
+                        <option>
+                            Connecticut
+                        </option>    
+                        <option>
+                            Delaware
+                        </option>    
+                        <option>
+                            Florida
+                        </option>    
+                        <option>
+                            Georgia
+                        </option>    
+                        <option>
+                            Hawaii
+                        </option>    
+                        <option>
+                            Idaho
+                        </option>    
+                        <option>
+                            Illinois
+                        </option>
+                        <option>
+                            Indiana
+                        </option>
+                        <option>
+                            Iowa
+                        </option>
+                        <option>
+                            Kansas
+                        </option>
+                        <option>
+                            Kentucky
+                        </option>    
+                        <option>
+                            Louisiana
+                        </option>    
+                        <option>
+                            Maine
+                        </option>
+                        <option>
+                            Maryland 
+                        </option>    
+                        <option>
+                            Massachusetts
+                        </option>
+                        <option>
+                            Michigan
+                        </option>
+                        <option>
+                            Minnesota
+                        </option>
+                        <option>
+                            Mississippi 
+                        </option>
+                        <option>
+                            Missouri
+                        </option>
+                        <option>
+                            Montanta
+                        </option>
+                        <option>
+                            Nebraska
+                        </option>
+                        <option>
+                            Nevada
+                        </option>
+                        <option>
+                            New Hampshire
+                        </option>
+                        <option>
+                            New Jersey
+                        </option>
+                        <option>
+                            New Mexico
+                        </option>
+                        <option>
+                            New York
+                        </option>
+                        <option>
+                            North Carolina
+                        </option>
+                        <option>
+                            North Dakota
+                        </option>
+                        <option>
+                            Ohio
+                        </option>
+                        <option>
+                            Oklahoma
+                        </option>
+                        <option>
+                            Oregon
+                        </option>
+                        <option>
+                            Pennsylvania
+                        </option>
+                        <option>
+                            Rhode Island
+                        </option>
+                        <option>
+                            South Carolina
+                        </option>
+                        <option>
+                            South Dakota
+                        </option>
+                        <option>
+                            Tennessee
+                        </option>
+                        <option>
+                            Texas
+                        </option>
+                        <option>
+                            Utah
+                        </option>
+                        <option>
+                            Vermont
+                        </option> 
+                        <option>
+                            Virginia
+                        </option> 
+                        <option>
+                            Washington
+                        </option>
+                        <option>
+                            West Virginia
+                        </option>  
+                        <option>
+                            Wisconsin
+                        </option>    
+                        <option>
+                            Wyoming
+                        </option>
+                    </optgroup>
+                </select>
+
+                <label for="Comments">Comments</label>
+                <textarea id="Comments"></textarea>
+
+                <label for="Submit"></label>
+                <input type="submit" value="Submit" id="Submit">
+
+            </form>
+        </article>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2021 - GIT414</p>
+    </footer>
+</body>
+
+</html>
